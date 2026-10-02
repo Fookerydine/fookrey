@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Panel</title>
+<link rel="stylesheet" href="css/cafe.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+<div class="admin-container">
+    <!-- ================================
+         SIDEBAR
+    ================================= -->
+
+<aside class="sidebar">
+<div class="logo">
+<h1>FOOKREY</h1>
+<h2>CAFE STAFF</h2>
+</div>
+
+<ul>
+<li class="active" onclick="goTo('admin.html')">
+<i class="fa-solid fa-house"></i>Dashboard</li>
+
+<li onclick="goTo('students.html')">
+<i class="fa-solid fa-users"></i>Student Management</li>
+
+<li onclick="goTo('question-manager.html')">
+<i class="fa-solid fa-book"></i>Question Manager</li>
+
+<li onclick="goTo('exam-control.html')">
+<i class="fa-solid fa-play"></i>Exam Control</li>
+
+<li onclick="goTo('results.html')">
+<i class="fa-solid fa-chart-column"></i>Result Manager</li>
+
+<li onclick="goTo('leaderboard.html')">
+<i class="fa-solid fa-trophy"></i>Leaderboard</li>
+
+<li onclick="goTo('certificates.html')">
+<i class="fa-solid fa-award"></i>Certificates</li>
+
+<li onclick="goTo('settings.html')">
+<i class="fa-solid fa-gear"></i>Settings</li>
+
+<li onclick="goTo('reports.html')">
+<i class="fa-solid fa-file-export"></i>Reports</li>
+
+<li onclick="logout()">
+<i class="fa-solid fa-right-from-bracket"></i>Logout</li>
+
+</ul>
+</aside>
+
+<!-- ================================
+         MAIN CONTENT
+    ================================= -->
+<main class="main-content">
+<!-- TOPBAR -->
+<div class="topbar">
+<h1>Cafe Staff Panel</h1>
+<button class="logout-btn" onclick="logout()">
+<i class="fa-solid fa-right-from-bracket"></i>Logout
+</button>
+</div>
+
+<!-- WELCOME -->
+
+<div class="welcome-box">
+<h2>Welcome to Cafe Staff Panel</h2>
+<p>Manage your complete cafe system</p>
+
+</div>
+<!-- ================================
+             ADMIN CARDS
+        ================================= -->
+
+<div class="admin-cards">
+<!-- STUDENT MANAGEMENT -->
+
+<div class="admin-card" onclick="goTo('students.html')">
+<i class="fa-solid fa-users"></i>
+<h3>Student Management</h3>
+<p>Add / Edit / Delete Students</p>
+</div>
+
+<!-- QUESTION MANAGER -->
+<div class="admin-card" onclick="goTo('question-manager.html')">
+<i class="fa-solid fa-book"></i>
+<h3>Question Manager</h3>
+<p>Add / Edit / Delete Questions</p>
+</div>
+
+<!-- EXAM CONTROL -->
+<div class="admin-card" onclick="goTo('exam-control.html')">
+<i class="fa-solid fa-play"></i>
+<h3>Exam Control</h3>
+<p>Start / Stop Quiz</p>
+</div>
+
+<!-- RESULT MANAGER -->
+<div class="admin-card" onclick="goTo('results.html')">
+<i class="fa-solid fa-chart-column"></i>
+<h3>Result Manager</h3>
+<p>View All Results</p>
+</div>
+
+<!-- LEADERBOARD -->
+<div class="admin-card" onclick="goTo('leaderboard.html')">
+<i class="fa-solid fa-trophy"></i>
+<h3>Leaderboard</h3>
+<p>Live Ranking</p>
+</div>
+
+            <!-- CERTIFICATES -->
+<div class="admin-card" onclick="goTo('certificates.html')">
+<i class="fa-solid fa-award"></i>
+<h3>Certificates</h3>
+<p>Generate Certificates</p>
+</div>
+
+<!-- SETTINGS -->
+<div class="admin-card" onclick="goTo('settings.html')">
+<i class="fa-solid fa-gear"></i>
+<h3>Settings</h3>
+<p>Portal Configuration</p>
+</div>
+
+<!-- REPORTS -->
+<div class="admin-card" onclick="goTo('reports.html')">
+<i class="fa-solid fa-file-export"></i>
+<h3>Reports</h3>
+<p>Export Excel / PDF</p>
+</div>
+</div>
+</main>
+</div>
+
+<!-- ADMIN JS -->
+<script type="module" src="js/cafe.s">
+</script>
+</body>
+</html>

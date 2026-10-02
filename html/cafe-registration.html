@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cafe registration</title>
+<link rel="stylesheet" href="css/cafe-registration.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+<div class="register-box">
+<div class="logo">
+
+<!-- <img src="images/logo.png"
+     alt="ECEM Logo"> -->
+
+<h1>FOOKREY</h1>
+</div>
+<form id="registerForm">
+<h2>Cafe Registration</h2>
+
+<div class="row">
+<div class="input-group">
+<label>Cafe Name</label>
+<input type="text" id="studentName" placeholder="Enter First Name" required>
+</div>
+
+<div class="input-group">
+<label>Surname</label>
+<input type="text" id="fatherName" placeholder="Enter Surname" required>
+</div>
+</div>
+
+<div class="row">
+<div class="input-group">
+<label>Mobile Number</label>
+<input type="tel" id="mobile" placeholder="10 Digit Mobile" maxlength="10" required>
+</div>
+</div>
+
+<div class="row">
+<div class="input-group">
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter Email">
+</div>
+</div>
+
+<div class="row">
+<div class="input-group full-width">
+<label>Address</label>
+<textarea id="address" rows="3" placeholder="Enter Full Address" required></textarea>
+</div>
+</div>
+
+<div class="row">
+<div class="input-group">
+<label>State</label>
+<input type="text" id="state" placeholder="Enter State" required>
+</div>
+
+<div class="input-group">
+<label>District</label>
+<input type="text" id="district" placeholder="Enter District" required>
+</div>
+</div>
+
+<div class="row">
+<div class="input-group">
+<label>PIN Code</label>
+<input type="text" id="pincode" placeholder="PIN Code" maxlength="6" required>
+</div>
+</div>
+
+<button type="submit" class="register-btn"><a href="cafe-registration-success.html"><i class="fa-solid fa-user-plus"></i>Register Now</a></button>
+
+<div class="login-link">Already Registered?<a href="cafe-login.html"> Cafe Login</a></div>
+</form>
+</div>
+</div>
+<script type="module" src="js/cafe-registration.js"></script>
+</body>
+</html>

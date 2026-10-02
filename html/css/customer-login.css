@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#111,#111);
+}
+
+/* ================= LOGIN CONTAINER ================= */
+
+.login-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* ================= LOGIN BOX ================= */
+
+.login-box{
+    width:100%;
+    max-width:450px;
+    background:#ffffff;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:10px 10px 10px 10px rgba(0,0,0);
+    animation:fadeIn .8s ease;
+}
+
+.login-box h1{
+    text-align:center;
+    color:#f6be00;
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+.login-box p{
+    text-align:center;
+    color:teal;
+    margin-bottom:30px;
+}
+
+/* ================= FORM ================= */
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.form-group input{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    transition:.3s;
+}
+
+.form-group input:focus{
+    outline:2px;
+    border-color:teal;
+    box-shadow:5px 10px 10px 5px rgba(0,0,0);
+}
+
+/* ================= BUTTON ================= */
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#0d47a1;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:5px 5px 10px 5px rgba(0,0,0);
+}
+
+button:hover{
+    background:#1565c0;
+    transform:translateY(-2px);
+}
+
+/* ================= FOOTER TEXT ================= */
+
+.login-box::after{
+    content:"© 2026 Fookery. All rights reserved.";
+    display:block;
+    text-align:center;
+    margin-top:25px;
+    color:#888;
+    font-size:13px;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px){
+
+.login-box{
+    padding:25px;
+}
+
+.login-box h1{
+    font-size:24px;
+}
+
+button{
+    font-size:16px;
+}
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Booking</title>
+<link rel="stylesheet" href="css/booking.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+<div class="register-box">
+<div class="logo">
+
+<!-- <img src="images/logo.png"
+     alt="ECEM Logo"> -->
+
+<h1>FOOKREY</h1>
+</div>
+<form id="registerForm">
+<h2>Table Booking</h2>
+
+<div class="row">
+<div class="input-group">
+<label>First Name</label>
+<input type="text" id="studentName" placeholder="Enter First Name" required>
+</div>
+
+<div class="input-group">
+<label>Surname</label>
+<input type="text" id="surname" placeholder="Enter Surname" required>
+</div>
+</div>
+
+<div class="row">
+<div class="input-group">
+<label>Mobile Number</label>
+<input type="tel" id="mobile" placeholder="10 Digit Mobile" maxlength="10" required>
+</div>
+</div>
+
+<div class="row">
+<div class="input-group">
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter Email">
+</div>
+</div>
+
+<div class="row">
+<div class="input-group">
+<label>Date</label>
+<input type="date" id="date" placeholder="Enter Date" required>
+</div>
+
+<div class="input-group">
+<label>Time</label>
+<input type="time" id="time" placeholder="Enter Time" required>
+</div>
+</div>
+
+<div class="row">
+<div class="input-group">
+<label>Number of Guests</label>
+<input type="number" id="guests" placeholder="Enter Number of Guests" min="1" required>
+</div>
+</div>
+
+<button type="submit" class="register-btn">Book Now</button>
+
+</form>
+</div>
+</div>
+<script type="module" src="js/booking.js"></script>
+</body>
+</html>

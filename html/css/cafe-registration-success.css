@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#f4f7fc,#f4f7fc);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.success-card{
+    width:100%;
+    max-width:700px;
+    background:#f4f7fc;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:10px 10px 10px 10px rgba(0,0,0,.1);
+    text-align:center;
+    animation:fadeIn .8s ease;
+}
+
+.success-card h1{
+    color:teal;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#666;
+    font-size:17px;
+    margin-bottom:20px;
+}
+
+hr{
+    margin:20px 0;
+    border:1px solid #e0e0e0;
+}
+
+.student-info{
+    text-align:left;
+    margin-top:20px;
+}
+
+.student-info p{
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+    font-size:17px;
+}
+
+.student-info strong{
+    color:teal;
+    display:inline-block;
+    width:170px;
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.buttons{
+    margin-top:30px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.buttons button,
+.login-btn{
+    padding:14px 24px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    text-decoration:none;
+    transition:.3s;
+}
+
+#printBtn{
+    background:teal;
+    color:#fff;
+}
+
+#printBtn:hover{
+    background:#005f5f;
+}
+
+#pdfBtn{
+    background:#e53935;
+    color:#fff;
+}
+
+#pdfBtn:hover{
+    background:#c62828;
+}
+
+.login-btn{
+    background:#e53935;
+    color:#fff;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+}
+
+.login-btn:hover{
+    background:#c62828;
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:768px){
+.success-card{
+    padding:25px;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+}
+
+.success-card h1{
+    font-size:24px;
+}
+
+.student-info strong{
+    width:100%;
+    display:block;
+    margin-bottom:5px;
+}
+
+.student-info p{
+    font-size:15px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.buttons button,
+.login-btn{
+    width:100%;
+    justify-content:center;
+}
+}
+
+/* ==========================================
+   Print
+========================================== */
+
+@media print{
+body{
+    background:#fff;
+    padding:0;
+}
+
+.buttons{
+    display:none;
+}
+
+.success-card{
+    box-shadow:none;
+    border:1px solid #000;
+    max-width:100%;
+}
+
+footer{
+    border:none;
+}
+}
+
+/* ==========================================
+   Animation
+========================================== */
+
+@keyframes fadeIn{
+from{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+}
+
+.photo-box{
+    text-align:center;
+    margin:20px 0;
+}
+
+.photo-box img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:5px solid teal;
+    object-fit:cover;
+}

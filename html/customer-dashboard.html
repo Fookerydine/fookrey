@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Dashboard</title>
+<link rel="stylesheet" href="css/customer-dashboard.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+<header class="header">
+<div class="logo-box">
+<div>
+<h2>FOOKREY</h2>
+</div>
+</div>
+
+<!-- LOGOUT -->
+<button type="button" id="logoutBtn" class="logout-btn">
+<i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+</header>
+
+<!-- ================= DASHBOARD ================= -->
+<section class="dashboard">
+<div class="dashboard-card">
+
+<!-- ================= PHOTO ================= -->
+<div class="photo-section">
+<img id="studentPhoto" src="images/default-user.png" alt="">
+</div>
+
+<!-- ================= WELCOME ================= -->
+<h2>Welcome<span id="studentName"></span></h2>
+
+<!-- ================= CUSTOMER DETAILS ================= -->
+<div class="customer-details">
+<div class="detail">
+<strong>Customer ID</strong>
+<span id="studentId"></span>
+</div>
+
+<div class="detail">
+<strong>Name</strong>
+<span id="customerName"></span>
+</div>
+
+<div class="detail">
+<strong>Mobile number</strong>
+<span id="mobile"></span>
+</div>
+</div>
+</section>
+
+<!-- ================= CONTEST STATUS ================= -->
+<div class="contest-box">
+<a href="exam.html" class="btn">
+<i class="fa-solid fa-calendar-check"></i> Booking</a>
+</div>
+
+<!-- START QUIZ -->
+<div class="contest-box">
+<a href="exam.html" class="btn">
+<i class="fa-solid fa-ticket"></i> Coupons</a>
+</div>
+
+<!-- MY RESULT -->
+<div class="contest-box">
+<a href="results.html" class="btn">
+<i class="fa-solid fa-user-circle"></i> Black Membership</a>
+</div>
+
+
+<!-- ================= FOOTER ================= -->.
+<footer>
+<p>© 2026 FOOKREY All Rights Reserved</p>
+</footer>
+
+<!-- ================= DASHBOARD JS ================= -->
+<script type="module" src="js/customer-dashboard.js"></script>
+</body>
+</html>
